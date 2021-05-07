@@ -1,0 +1,23 @@
+header{
+    text-align: center;
+
+    .logo{
+        width: 250px;
+        margin: 50px;
+    }
+
+    .main-nav{
+        
+        a{
+            display: inline-block;
+            padding: 20px 10px;
+            margin: 0 10px;
+            font-size: 24px;
+            font-weight: 600;
+
+            &:hover{
+                background-color: #b2e5fc;
+            }
+        }
+    }
+}

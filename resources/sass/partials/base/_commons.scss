@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+        //border: 1px solid red;
+}
+
+body{
+    // background-color: $clr--text;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+
+   &.list-inline > li{
+       display: inline-block;
+   } 
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
