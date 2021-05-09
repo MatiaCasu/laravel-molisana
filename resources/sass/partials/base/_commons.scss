@@ -2,12 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-        //border: 1px solid red;
 }
 
 body{
-    // background-color: $clr--text;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -23,3 +20,14 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+.flex-box{
+    display: flex;
+}
+
+h2{
+    color: $clr--primary;
+    margin: 20px 0;
+    font-size: 28px;
+}
+

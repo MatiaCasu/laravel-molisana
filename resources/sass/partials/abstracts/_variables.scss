@@ -1,3 +1,17 @@
+// VARIABLES
 $clr--text: #848d9b;
+$clr--primary: #002d73;
+$clr--secondary: #b2e5fc;
 
 $main-container: 1200px;
+
+
+// MIXIN
+
+@mixin lg{
+    @media (min-width: 968px) { @content; }
+}
+
+@mixin md{
+    @media (min-width: 568px) { @content; }
+}

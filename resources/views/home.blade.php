@@ -12,16 +12,47 @@
 <body>
     <div class="container">
         <header>
+        <!-- Logo -->
         <img class="logo" src="{{ asset('img/marchio-sito-test.png')}}" alt="">
+        <!-- /Logo -->
+        <!-- Nav Bar -->
         <ul class="main-nav list-inline">
             <li> <a href="">Home</a> </li>
             <li> <a href="">Prodotti</a> </li>
             <li> <a href="">News</a> </li>
         </ul>
+        <!-- /Nav Bar -->
         </header>
         <main>
             <div class="full-bg-container">
-
+                <div class="main-container">
+                    <!-- Liste pasta -->
+                    <h2>LE LUNGHE</h2>
+                    <ul class="pasta-list">
+                        @foreach ($lunga as $pastaLunga)
+                        <li>
+                            <a href=""> <img src="{{$pastaLunga['src']}}" alt=""> </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                    <h2>LE CORTE</h2>
+                    <ul class="pasta-list">
+                        @foreach ($corta as $pastaCorta)
+                        <li>
+                            <a href=""> <img src="{{$pastaCorta['src']}}" alt=""> </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                    <h2>LE CORTISSIME</h2>
+                    <ul class="pasta-list">
+                        @foreach ($cortissima as $pastaCortissima)
+                        <li> 
+                            <a href=""> <img src="{{$pastaCortissima['src']}}" alt=""> </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                    <!-- /Liste pasta -->
+                </div>
             </div>
         </main>
         <footer>

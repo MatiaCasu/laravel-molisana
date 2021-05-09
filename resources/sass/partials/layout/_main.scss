@@ -2,8 +2,45 @@ main{
 
     .full-bg-container{
         width: 100%;
+        padding: 50px 0;
         min-height: 600px;
         background-image: url('../img/fondo-pag-speciali.jpg');
         background-size: cover;
+        background-position: center;
+    }
+
+    .main-container{
+        max-width: $main-container;
+        margin: 0px auto;
+    }
+
+    .pasta-list{  
+        display: flex; 
+        flex-wrap: wrap;
+
+        a{
+            display: inline-block;
+        }
+
+        li{
+            flex-basis: 100%;
+            margin-right: 10px;
+        }
+
+        a, img{
+            width: 100%;
+        }
+
+        @include md {
+            li{
+                flex-basis: calc( 50% - 10px);
+            }
+        }
+
+        @include lg {
+            li{
+                flex-basis: calc( 33% - 10px);
+            }
+        }
     }
 }
