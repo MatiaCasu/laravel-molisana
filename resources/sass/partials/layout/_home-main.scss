@@ -1,15 +1,12 @@
-main{
+.home-main-container{
+    width: 100%;
+    padding: 50px 0;
+    min-height: 600px;
+    background-image: url('../img/fondo-pag-speciali.jpg');
+    background-size: cover;
+    background-position: center;
 
-    .full-bg-container{
-        width: 100%;
-        padding: 50px 0;
-        min-height: 600px;
-        background-image: url('../img/fondo-pag-speciali.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .main-container{
+    .container{
         max-width: $main-container;
         margin: 0px auto;
     }

@@ -57,43 +57,6 @@ header .main-nav a:hover {
   background-color: #b2e5fc;
 }
 
-main .full-bg-container {
-  width: 100%;
-  padding: 50px 0;
-  min-height: 600px;
-  background-image: url("../img/fondo-pag-speciali.jpg");
-  background-size: cover;
-  background-position: center;
-}
-main .main-container {
-  max-width: 1200px;
-  margin: 0px auto;
-}
-main .pasta-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-main .pasta-list a {
-  display: inline-block;
-}
-main .pasta-list li {
-  flex-basis: 100%;
-  margin-right: 10px;
-}
-main .pasta-list a, main .pasta-list img {
-  width: 100%;
-}
-@media (min-width: 568px) {
-  main .pasta-list li {
-    flex-basis: calc( 50% - 10px);
-  }
-}
-@media (min-width: 968px) {
-  main .pasta-list li {
-    flex-basis: calc( 33% - 10px);
-  }
-}
-
 footer .main-container {
   color: #848d9b;
   max-width: 1200px;
@@ -118,4 +81,48 @@ footer .full-bg-container {
   background-image: url("../img/footer-montagne-bottom.jpg");
   background-size: cover;
   background-position: bottom;
+}
+
+.home-main-container {
+  width: 100%;
+  padding: 50px 0;
+  min-height: 600px;
+  background-image: url("../img/fondo-pag-speciali.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.home-main-container .container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.home-main-container .pasta-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-main-container .pasta-list a {
+  display: inline-block;
+}
+.home-main-container .pasta-list li {
+  flex-basis: 100%;
+  margin-right: 10px;
+}
+.home-main-container .pasta-list a, .home-main-container .pasta-list img {
+  width: 100%;
+}
+@media (min-width: 568px) {
+  .home-main-container .pasta-list li {
+    flex-basis: calc( 50% - 10px);
+  }
+}
+@media (min-width: 968px) {
+  .home-main-container .pasta-list li {
+    flex-basis: calc( 33% - 10px);
+  }
+}
+
+.products-main-container {
+  width: 100%;
+  padding: 50px 0;
+  min-height: 600px;
+  background-color: lightblue;
 }

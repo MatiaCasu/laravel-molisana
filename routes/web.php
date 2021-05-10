@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
      
     $data = [
         [
@@ -160,5 +159,10 @@ Route::get('/', function () {
         'corta' => $corta,
         'cortissima' => $cortissima,
     ]);
+});
+
+Route::get('/product', function () {
+
+    return view('product');
 });
 
