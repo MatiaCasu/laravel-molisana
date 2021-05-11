@@ -63,8 +63,23 @@ Route::get('/products/{id}', function ($id) {
 
     $prodId= $data[$id];
 
+    if( $id == 0){
+        $prevId = count($data) - 1;
+        $nextId = $id + 1;    
+    }
+    elseif($id == (count($data) - 1) ){
+        $nextId = 0;       
+        $prevId = $id - 1;
+    }
+    else{
+        $nextId = $id + 1;
+        $prevId = $id - 1;    
+    }
+
     return view('single-product',[
-        'prodId' => $prodId
+        'prodId' => $prodId,
+        'prevId' => $prevId,
+        'nextId' => $nextId
     ]);
-}) ->where('id', '[0-9]+') -> name('single-product');
+}) -> where('id', '[0-9]+') -> name('single-product');
 

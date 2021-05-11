@@ -14,9 +14,15 @@ header{
             font-size: 24px;
             font-weight: 600;
 
-            &.active, &:hover{
-               background-color: $clr--secondary;
+            &.active, &.active:hover{
+                color: inherit;
+                background-color: $clr--secondary;
             }
+
+            &:hover{
+                color: $clr--secondary;
+            }
+            
         }
     }
 }

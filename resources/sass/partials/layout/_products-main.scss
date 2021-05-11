@@ -1,6 +1,7 @@
 .products-main-container{
     width: 100%;
     background-color: $bg--primary;
+    position: relative;
 
     .container{
         max-width: $main-container;
@@ -10,13 +11,15 @@
 
     .product{
         padding-bottom: 80px;
+        overflow-x: hidden;
 
         h2{
             text-align: center;
         }
 
         img{
-            width: 80%;
+            width: 70%;
+            min-width: 400px;
             display: block;
             margin: 0 auto;
         }
@@ -28,4 +31,22 @@
             margin-bottom: 10px;
         }
     }
+
+    > a.fas{
+        position: absolute;
+        top: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #fff;
+        font-size: 35px;
+        padding: 10px;
+        
+        &.prev{
+            left: 30px;
+        }
+
+        &.next{
+            right: 30px;
+        }
+    }
+
 }

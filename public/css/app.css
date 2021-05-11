@@ -53,8 +53,12 @@ header .main-nav a {
   font-size: 24px;
   font-weight: 600;
 }
-header .main-nav a.active, header .main-nav a:hover {
+header .main-nav a.active, header .main-nav a.active:hover {
+  color: inherit;
   background-color: #b2e5fc;
+}
+header .main-nav a:hover {
+  color: #b2e5fc;
 }
 
 footer .main-container {
@@ -123,6 +127,7 @@ footer .full-bg-container {
 .products-main-container {
   width: 100%;
   background-color: #b7dae5;
+  position: relative;
 }
 .products-main-container .container {
   max-width: 1200px;
@@ -131,12 +136,14 @@ footer .full-bg-container {
 }
 .products-main-container .product {
   padding-bottom: 80px;
+  overflow-x: hidden;
 }
 .products-main-container .product h2 {
   text-align: center;
 }
 .products-main-container .product img {
-  width: 80%;
+  width: 70%;
+  min-width: 400px;
   display: block;
   margin: 0 auto;
 }
@@ -145,4 +152,18 @@ footer .full-bg-container {
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 10px;
+}
+.products-main-container > a.fas {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  font-size: 35px;
+  padding: 10px;
+}
+.products-main-container > a.fas.prev {
+  left: 30px;
+}
+.products-main-container > a.fas.next {
+  right: 30px;
 }
