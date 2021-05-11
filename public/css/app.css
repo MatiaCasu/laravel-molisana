@@ -53,7 +53,7 @@ header .main-nav a {
   font-size: 24px;
   font-weight: 600;
 }
-header .main-nav a:hover {
+header .main-nav a.active, header .main-nav a:hover {
   background-color: #b2e5fc;
 }
 
@@ -122,7 +122,27 @@ footer .full-bg-container {
 
 .products-main-container {
   width: 100%;
-  padding: 50px 0;
-  min-height: 600px;
-  background-color: lightblue;
+  background-color: #b7dae5;
+}
+.products-main-container .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+.products-main-container .product {
+  padding-bottom: 80px;
+}
+.products-main-container .product h2 {
+  text-align: center;
+}
+.products-main-container .product img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.products-main-container .product p, .products-main-container .product ol {
+  color: #002d73;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
 }

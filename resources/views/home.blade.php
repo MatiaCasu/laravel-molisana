@@ -13,7 +13,7 @@
         <ul class="pasta-list">
             @foreach ($lunga as $pastaLunga)
             <li>
-                <a href=""> <img src="{{$pastaLunga['src']}}" alt=""> </a>
+            <a href="{{route('single-product', ['id' => $pastaLunga['pastaId'] ]) }}"><img src="{{$pastaLunga['src']}}" alt=""> </a>
             </li>
             @endforeach
         </ul>
@@ -21,7 +21,7 @@
         <ul class="pasta-list">
             @foreach ($corta as $pastaCorta)
             <li>
-                <a href=""> <img src="{{$pastaCorta['src']}}" alt=""> </a>
+                <a href="{{route('single-product', ['id' => $pastaCorta['pastaId'] ]) }}"> <img src="{{$pastaCorta['src']}}" alt=""> </a>
             </li>
             @endforeach
         </ul>
@@ -29,7 +29,7 @@
         <ul class="pasta-list">
             @foreach ($cortissima as $pastaCortissima)
             <li> 
-                <a href=""> <img src="{{$pastaCortissima['src']}}" alt=""> </a>
+                <a href="{{route('single-product', ['id' => $pastaCortissima['pastaId'] ]) }}"> <img src="{{$pastaCortissima['src']}}" alt=""> </a>
             </li>
             @endforeach
         </ul>

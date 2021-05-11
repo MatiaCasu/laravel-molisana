@@ -6,8 +6,7 @@ header{
         margin: 50px;
     }
 
-    .main-nav{
-        
+    .main-nav{ 
         a{
             display: inline-block;
             padding: 20px 10px;
@@ -15,7 +14,7 @@ header{
             font-size: 24px;
             font-weight: 600;
 
-            &:hover{
+            &.active, &:hover{
                background-color: $clr--secondary;
             }
         }

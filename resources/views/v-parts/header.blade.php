@@ -4,9 +4,9 @@
     <!-- /Logo -->
     <!-- Nav Bar -->
     <ul class="main-nav list-inline">
-        <li> <a href="/">Home</a> </li>
-        <li> <a href="/product">Prodotti</a> </li>
-        <li> <a href="">News</a> </li>
+        <li> <a class="{{Route::getCurrentRoute()->getName() == 'homepage' ? 'active' : ''}}" href="/">Home</a> </li>
+        <li> <a class="{{Route::getCurrentRoute()->getName() == 'products' ? 'active' : ''}}" href="/products">Prodotti</a> </li>
+        <li> <a class="" href="">News</a> </li>
     </ul>
     <!-- /Nav Bar -->
 </header>
